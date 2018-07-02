@@ -1,0 +1,164 @@
+import os
+# puntaje
+preguntas_correctas=[]
+puntos_por_pregunta = 2
+puntaje = len(preguntas_correctas) * puntos_por_pregunta
+
+# función
+
+def respuesta_correcta(x,y):
+    if y==x:
+        print("correcto")
+    else:
+        print("Incorrecta")
+        opción=input("ver respuesta(si/no): ")
+        if opción=="si":
+            print(x)
+        elif opción=="no":
+            print("Ok")
+        else:
+            print("error")
+    return
+
+for z in range (10000000000000):
+    print("Peguntas")
+    # pregunta N: 1
+    print("1) ¿Cuales son ejemplos de estructuras de condición?")
+
+    print("a) if, else")
+    print("b) elif")
+    print("c) Ambas")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("c",respuesta)
+
+    if respuesta=="c":
+        preguntas_correctas.append(1)
+
+    os.system('cls')
+
+    # Pregunta N:2
+
+    print("2) ¿Qué representa un if?")
+
+    print("a) Una lista")
+    print("b) Una condición")
+    print("c) Un bucle")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("b",respuesta)
+
+    if respuesta=="b":
+        preguntas_correctas.append(2)
+    os.system('cls')
+
+    # Pregunta N:3
+
+    print("3) ¿Para que sirve el int()?")
+
+    print("a) Para poder escrbir solamente números enteros")
+    print("b) Para poder escrbir números con decimales")
+    print("c) ambas")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("a",respuesta)
+    if respuesta=="a":
+        preguntas_correctas.append(3)
+    os.system('cls')
+
+
+    # Pregunta N:4
+
+    print("4) ¿Para que sirve la variable print()?")
+
+    print("a) para que en la consola aparezca un determinado texto")
+    print("b) para que en la consola se pueda introducir una variable")
+    print("c) ninguna")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("a",respuesta)
+    if respuesta=="a":
+        preguntas_correctas.append(4)
+    os.system('cls')
+
+    # Pregunta N:5
+
+    print("5) ¿Qué es un bucle?")
+
+    print("a) estructura de control que repite un bloque de instrucciones")
+    print("b) una estructura de control que enlista los strings")
+    print("c) un codigo de cierre")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("a",respuesta)
+    if respuesta=="a":
+        preguntas_correctas.append(5)
+    os.system('cls')
+
+    # Pregunta N:6
+
+    print("6) La sintaxis de un bucle")
+
+    print("a) elif, for")
+    print("b) string, tuplas")
+    print("c) While, for")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("c",respuesta)
+    if respuesta=="c":
+        preguntas_correctas.append(6)
+    os.system('cls')
+
+    # Pregunta N:7
+
+    print("7) ¿Mediante que instrucción se realiza una función?")
+
+    print("a) float")
+    print("b) def")
+    print("c) ninguno")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("b",respuesta)
+    if respuesta=="b":
+        preguntas_correctas.append(7)
+
+    os.system('cls')
+
+    # Pregunta N:8
+
+    print("8) ¿Que tipo de sintaxis se utiliza en una lista?")
+
+    print("a) ()")
+    print("b) {}")
+    print("c) []")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("c",respuesta)
+    if respuesta=="c":
+        preguntas_correctas.append(8)
+    os.system('cls')
+
+    # Pregunta N:9
+
+    print("9) ¿Qué es un string?")
+
+    print("a) Un tipo de función")
+    print("b) es una secuencia de caracteres")
+    print("c) una lista")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("b",respuesta)
+    if respuesta=="b":
+        preguntas_correctas.append(9)
+    os.system('cls')
+
+    # Pregunta N:10
+
+    print("10) ¿Qué es una lista?")
+
+    print("a) ninguna")
+    print("b) una secuencia de valores encerrados entre llaves y separados por puntos y comas.")
+    print("c) una secuencia de valores encerrados entre corchetes y separados por comas.")
+    respuesta=input("respuesta: ")
+    respuesta_correcta("c",respuesta)
+    if respuesta=="c":
+        preguntas_correctas.append(10)
+    os.system('cls')
+
+    print("preguntas correctas: ",preguntas_correctas)
+    puntaje = len(preguntas_correctas) * puntos_por_pregunta
+    print("puntaje: ",puntaje)
+    H=input("repetir(si/no): ")
+    if H =="no":
+        break
