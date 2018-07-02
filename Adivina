@@ -1,8 +1,20 @@
+print("¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶")
+print("¶´´´´´¶´´´´´´¶´´¶¶¶¶´´¶¶´´¶´´´´´¶¶¶´´´´¶¶´´´´´¶")
+print("¶´´¶¶¶¶´´¶¶´´¶´´¶¶¶¶´´¶¶´´¶´´¶¶´´¶´´¶¶´´¶´´¶¶¶¶")
+print("¶´´´´´¶´´´´´´¶´´¶¶¶¶´´¶¶´´¶´´¶¶´´¶´´¶¶´´¶´´´´´¶")
+print("¶¶¶¶´´¶´´¶¶´´¶´´¶¶¶¶´´¶¶´´¶´´¶¶´´¶´´¶¶´´¶¶¶¶´´¶")
+print("¶´´´´´¶´´¶¶´´¶´´´´´¶´´´´´´¶´´´´´¶¶¶´´´´¶¶´´´´´¶")
+print("¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶")
+usuario = str(input("Ingrese su usuario: "))
+print("********************************************************************************")
+print("Hola",usuario,", bienvenido a este maravilloso juego de adivinanzas")
+
 import random
 limite = int(input("Ingrese el mayor número posible: "))
 num = random.randint(1, limite +1)
 
-print("Ahora intenta adivinarlo. Tienes 3 intentos")
+print("Ahora intenta adivinarlo. Pero recuerdaaa, SOLO TIENES 3 intentos")
+print("Que comiencen las sustolimpiadas")
 intento = int(input("Intento 1: "))
 if intento == num:
     print(f"¡Adivinaste! El número es {num}")
@@ -18,3 +30,5 @@ else:
             print(f"¡Adivinaste! El número es {num}")
         else:
             print(f"Se han acabado tus intentos. El número es {num}")
+      
+   
