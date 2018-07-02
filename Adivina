@@ -1,0 +1,20 @@
+import random
+limite = int(input("Ingrese el mayor número posible: "))
+num = random.randint(1, limite +1)
+
+print("Ahora intenta adivinarlo. Tienes 3 intentos")
+intento = int(input("Intento 1: "))
+if intento == num:
+    print(f"¡Adivinaste! El número es {num}")
+else:
+    print("Intentalo de nuevo")
+    intento = int(input("Intento 1: "))
+    if intento == num:
+        print(f"¡Adivinaste! El número es {num}")
+    else:
+        print("Una vez más")
+        intento = int(input("Intento 1: "))
+        if intento == num:
+            print(f"¡Adivinaste! El número es {num}")
+        else:
+            print(f"Se han acabado tus intentos. El número es {num}")
