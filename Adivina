@@ -30,5 +30,26 @@ else:
             print(f"¡Adivinaste! El número es {num}")
         else:
             print(f"Se han acabado tus intentos. El número es {num}")
+print("***********************************************************************************")
+print("Quieres una pregunta reto?")
+    print("O no?")
+    print("a) SI")
+    print("b) No")
+    rpta1 = input("Respuesta:")
+    if rpta1 == "a":
+       print("Esta bien, ahí te va")
+       print("En una pecera habían 10 peces,2 se ahogaron y 3 se fueron nadando")
+       print("Cuántos quedan?")       
+       print("a) 5 ")
+       print("b) 10")
+       print("c) 0")
+       rpta2= input("Respuesta:")
+       if rpta2 == "b":
+       print("Eres un genio amiguito, deberías estar en la nasa")
+       else:
+        print("No eres digno de jugar este juego que se juega jugando")
+  
+  
+
       
    
